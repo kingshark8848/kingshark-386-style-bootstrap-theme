@@ -1,0 +1,15 @@
+// Kingshark 0.1
+// -----------------------------------------------------
+
+$web-font-path: "https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700" !default;
+@import url($web-font-path);
+
+// Buttons ====================================================================
+
+// Typography =================================================================
+
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
+@include text-lighter();

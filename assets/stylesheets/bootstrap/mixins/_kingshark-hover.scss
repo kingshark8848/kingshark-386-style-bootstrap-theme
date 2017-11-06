@@ -1,0 +1,24 @@
+// @path: [theme]/src/lib/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_kingshark-hover.scss
+// @var $btn-shadow-bottom-offset 
+// @var $btn-shadow-right-offset
+
+// kingshark hover in air style
+@mixin object-hover(){
+  margin-right: $btn-shadow-bottom-offset*2; // by kingshark
+  margin-bottom: $btn-shadow-right-offset*2;
+  @include box-shadow($btn-shadow-bottom-offset $btn-shadow-right-offset 0 $black);
+}
+
+@mixin clear-object-hover(){
+  margin-right: inherit; // by kingshark
+  margin-bottom: inherit;
+  @include box-shadow(none);
+}
+
+// kingshark ground style
+@mixin object-ground() {
+    @include box-shadow(none);
+    position: relative;
+    top: $btn-shadow-bottom-offset;
+    left: $btn-shadow-right-offset; // important change by kingshark
+  }

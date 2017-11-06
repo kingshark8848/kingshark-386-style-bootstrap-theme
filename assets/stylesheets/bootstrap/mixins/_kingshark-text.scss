@@ -1,0 +1,55 @@
+// @path: [theme]/src/lib/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_kingshark-text.scss
+
+@mixin text-lighter() {
+    .text-primary,
+    .text-primary:hover {
+      color: lighten($brand-primary,20%);
+    }
+    
+    .text-success,
+    .text-success:hover {
+      color: lighten($brand-success,20%);
+    }
+    
+    .text-danger,
+    .text-danger:hover {
+      color: lighten($brand-danger,20%);
+    }
+    
+    .text-warning,
+    .text-warning:hover {
+      color: lighten($brand-warning,20%);
+    }
+    
+    .text-info,
+    .text-info:hover {
+      color: lighten($brand-info,20%);
+    }
+}
+ 
+@mixin text-bg1() {
+    .text-primary,
+    .text-primary:hover {
+      color: $black;
+    }
+    
+    .text-success,
+    .text-success:hover {
+      color: $greenDark;
+    }
+    
+    .text-danger,
+    .text-danger:hover {
+      color: lighten($brand-danger,10%);
+    }
+    
+    .text-warning,
+    .text-warning:hover {
+      color: lighten($brand-warning,10%);
+    }
+    
+    .text-info,
+    .text-info:hover {
+      color: lighten($brand-info,10%);
+    }
+}

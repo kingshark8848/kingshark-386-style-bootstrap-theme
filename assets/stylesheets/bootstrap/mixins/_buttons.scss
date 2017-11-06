@@ -1,0 +1,67 @@
+// Button variants
+//
+// Easily pump out default styles, as well as :hover, :focus, :active,
+// and disabled options for all buttons
+
+// @path: [theme]/src/lib/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_buttons.scss
+
+@mixin button-variant($color, $background, $border) {
+  color: $color;
+  background-color: $background;
+  // border-color: transparent; // kingshark
+
+  &:focus,
+  &.focus {
+    color: $color;
+    background-color: darken($background, 10%);
+        // border-color: transparent; // kingshark
+  }
+  &:hover {
+    color: $color;
+    background-color: darken($background, 10%);
+        // border-color: darken($border, 12%); // kingshark
+  }
+  &:active,
+  &.active,
+  .open > &.dropdown-toggle {
+    color: $color;
+    background-color: darken($background, 10%);
+        // border-color: darken($border, 12%); // kingshark
+
+    &:hover,
+    &:focus,
+    &.focus {
+      color: $color;
+      background-color: darken($background, 17%);
+          // border-color: darken($border, 25%); // kingshark
+    }
+  }
+  &:active,
+  &.active,
+  .open > &.dropdown-toggle {
+    background-image: none;
+  }
+  &.disabled,
+  &[disabled],
+  fieldset[disabled] & {
+    &:hover,
+    &:focus,
+    &.focus {
+      background-color: $background;
+          // border-color: $border; // kingshark
+    }
+  }
+
+  .badge {
+    color: $background;
+    background-color: $color;
+  }
+}
+
+// Button sizes
+@mixin button-size($padding-vertical, $padding-horizontal, $font-size, $line-height, $border-radius) {
+  padding: $padding-vertical $padding-horizontal;
+  font-size: $font-size;
+  line-height: $line-height;
+  border-radius: $border-radius;
+}
