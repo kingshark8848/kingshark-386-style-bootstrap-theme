@@ -134,6 +134,11 @@ output {
 
   background: $input-bg; // kingshark
   @include object-hover(); // kingshark
+  &:focus{
+    @include object-hover(); // kingshark
+    border-color: $text-color;
+    border-width: 2px;
+  }
 
   // Unstyle the caret on `<select>`s in IE10+.
   &::-ms-expand {
