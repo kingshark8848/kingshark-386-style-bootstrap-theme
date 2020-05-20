@@ -31,7 +31,6 @@ $bootstrap-sass-asset-helper: false !default;
 $black:                 #000;
 $grayDark:              #555;
 $gray:                  gray;
-$grayLight:             gray;
 $white:                 #FFF;
 
 
@@ -55,12 +54,12 @@ $pink:                  #FE54FE;
 $purple:                #FE5454;
 
 $gray-base:              $gray;
-$gray-darker:            $grayDark; 
-$gray-dark:              $grayDark;
-$gray-light:             $grayLight;
-$gray-lighter:           $grayLight;
+$gray-darker:            darken($gray-base, 20%);
+$gray-dark:              darken($gray-base, 10%);
+$gray-light:             lighten($gray-base, 10%);
+$gray-lighter:           lighten($gray-base, 20%);
 
-$brand-primary:         $gray-dark;
+$brand-primary:         $black;
 $brand-primary-bg:      $cyanDark;
 $brand-success:         $greenDark;
 $brand-info:            $brown;
@@ -245,7 +244,7 @@ $btn-border-radius-small:        $border-radius-small !default;
 //** `<input>` background color
 $input-bg:                       $gray !default;
 //** `<input disabled>` background color
-$input-bg-disabled:              $gray-lighter !default;
+$input-bg-disabled:              $black !default;
 
 //** Text color for `<input>`s
 $input-color:                    $black !default;
@@ -482,7 +481,7 @@ $navbar-inverse-toggle-border-color:        transparent !default;
 
 //=== Shared nav styles
 $nav-link-padding:                          10px 15px !default;
-$nav-link-hover-bg:                         $gray-lighter !default;
+$nav-link-hover-bg:                         $gray !default;
 
 $nav-disabled-link-color:                   $gray-light !default;
 $nav-disabled-link-hover-color:             $gray-light !default;
@@ -490,7 +489,7 @@ $nav-disabled-link-hover-color:             $gray-light !default;
 //== Tabs
 $nav-tabs-border-color:                     #ddd !default;
 
-$nav-tabs-link-hover-border-color:          $gray-lighter !default;
+$nav-tabs-link-hover-border-color:          $gray !default;
 
 $nav-tabs-active-link-hover-bg:             $body-bg !default;
 $nav-tabs-active-link-hover-color:          $gray !default;
@@ -514,10 +513,10 @@ $pagination-bg:                        $greenDark !default;
 $pagination-border:                    #ddd !default;
 
 $pagination-hover-color:               $link-hover-color !default;
-$pagination-hover-bg:                  $gray-lighter !default;
+$pagination-hover-bg:                  $gray !default;
 $pagination-hover-border:              #ddd !default;
 
-$pagination-active-color:              $gray-light !default;
+$pagination-active-color:              $black !default;
 $pagination-active-bg:                 #f5f5f5 !default;
 $pagination-active-border:             #ddd !default;
 
@@ -910,7 +909,7 @@ $pre-scrollable-max-height:   340px !default;
 //** Horizontal offset for forms and lists.
 $component-offset-horizontal: 180px !default;
 //** Text muted color
-$text-muted:                  $gray-light !default;
+$text-muted:                  $gray-dark !default;
 //** Abbreviations and acronyms border color
 $abbr-border-color:           $gray-light !default;
 //** Headings small color

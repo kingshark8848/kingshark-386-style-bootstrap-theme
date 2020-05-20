@@ -6,6 +6,7 @@
 // @path: [theme]/src/lib/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_buttons.scss
 
 @mixin button-variant($color, $background, $border) {
+  border-color: white;
   color: $color;
   background-color: $background;
   // border-color: transparent; // kingshark
